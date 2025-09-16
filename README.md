@@ -5,7 +5,7 @@
 
 ## サイトURL
 
-https://example.com
+https://autumn-phrase-generator.vercel.app
 
 ## 機能
 
