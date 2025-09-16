@@ -16,6 +16,25 @@ export const metadata: Metadata = {
   icons: {
     icon: "/autumn-leaves.svg",
   },
+  openGraph: {
+    title: "秋フレーズジェネレーター",
+    description: "フレーズから、秋っぽさを感じてください",
+    images: [
+      {
+        url: "/ogp.png",
+        width: 1200,
+        height: 630,
+        alt: "秋フレーズジェネレーター",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "秋フレーズジェネレーター",
+    description: "フレーズから、秋っぽさを感じてください",
+    images: ["/ogp.png"],
+  },
 }
 
 export default function RootLayout({
