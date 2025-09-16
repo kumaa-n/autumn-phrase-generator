@@ -48,8 +48,8 @@ export default function PhrasesPage() {
         <div className="container mx-auto px-4 py-16">
           {/* タイトル */}
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">秋フレーズ一覧</h1>
-            <p className="text-lg text-autumn-muted">秋のようなフレーズをご覧いただけます</p>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">秋っぽいフレーズ一覧</h1>
+            <p className="text-lg text-autumn-muted">秋っぽいフレーズをご覧いただけます</p>
           </div>
 
           {/* カード */}
@@ -59,7 +59,7 @@ export default function PhrasesPage() {
                 key={`${currentPage}-${index}`}
               >
                 <CardContent>
-                  <blockquote className="text-sm sm:text-base md:text-lg text-center text-autumn-emphasis font-medium leading-relaxed">
+                  <blockquote className="text-base md:text-lg text-center text-autumn-emphasis font-medium leading-relaxed">
                     「{phrase}」
                   </blockquote>
                 </CardContent>

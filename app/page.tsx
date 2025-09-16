@@ -38,7 +38,7 @@ export default function Home() {
           {/* タイトル */}
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-6xl font-bold mb-4">秋フレーズジェネレーター</h1>
-            <p className="text-lg text-autumn-muted">生成されたフレーズから、秋を感じてください</p>
+            <p className="text-lg text-autumn-muted">フレーズから、秋っぽさを感じてください</p>
           </div>
 
           {/* フレーズ表示エリア */}
@@ -53,7 +53,7 @@ export default function Home() {
                   <div className="text-center text-autumn-muted">
                     「フレーズを生成」ボタンをクリックして、
                     <br />
-                    秋を感じるフレーズを見つけよう
+                    秋っぽさを感じるフレーズを見つけよう
                   </div>
                 )}
               </CardContent>

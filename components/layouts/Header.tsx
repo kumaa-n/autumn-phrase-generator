@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className="navbar bg-neutral text-base-100">
       <div className="flex-1">
-        <Link href="/" className="text-lg">
+        <Link href="/" className="text-base sm:text-lg">
           秋フレーズジェネレーター
         </Link>
       </div>
