@@ -4,26 +4,122 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: oklch(0.97 0.015 42);
+  --foreground: oklch(0.35 0.04 32);
+  --card: oklch(0.98 0.012 45);
+  --card-foreground: oklch(0.32 0.04 30);
+  --popover: oklch(0.98 0.012 45);
+  --popover-foreground: oklch(0.32 0.04 30);
+
+  --primary: oklch(0.58 0.12 38);
+  --primary-foreground: oklch(0.97 0.015 42);
+  --secondary: oklch(0.90 0.025 40);
+  --secondary-foreground: oklch(0.35 0.04 32);
+
+  --muted: oklch(0.89 0.02 38);
+  --muted-foreground: oklch(0.52 0.035 34);
+  --accent: oklch(0.91 0.03 42);
+  --accent-foreground: oklch(0.32 0.04 30);
+
+  --destructive: oklch(0.58 0.18 25);
+  --destructive-foreground: oklch(0.97 0.015 42);
+  --border: oklch(0.85 0.025 38);
+  --input: oklch(0.85 0.025 38);
+  --ring: oklch(0.58 0.12 38);
+  --radius: 0.625rem;
 }
 
 @theme inline {
+  --font-sans: var(--font-noto-serif-jp), serif;
+  --font-mono: var(--font-geist-mono);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-noto-serif-jp), "Noto Serif JP", serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .btn {
+    border-radius: var(--radius, 0.625rem);
+  }
+}
+
+@layer utilities {
+  .text-autumn-primary {
+    color: oklch(0.58 0.12 38);
+  }
+
+  .text-autumn-secondary {
+    color: oklch(0.48 0.1 36);
+  }
+
+  .text-autumn-muted {
+    color: oklch(0.52 0.035 34);
+  }
+
+  .text-autumn-emphasis {
+    color: oklch(0.42 0.08 32); /* フレーズ用の強い主張色 */
+  }
+
+  .bg-autumn-primary {
+    background-color: oklch(0.58 0.12 38);
+  }
+
+  .bg-autumn-primary-hover:hover {
+    background-color: oklch(0.54 0.13 36);
+  }
+
+  .bg-autumn-secondary {
+    background-color: oklch(0.90 0.025 40);
+  }
+
+  .bg-autumn-soft {
+    background-color: oklch(0.95 0.015 40);
+  }
+
+  .border-autumn {
+    border-color: oklch(0.78 0.04 36);
+  }
+
+  .border-autumn-soft {
+    border-color: oklch(0.85 0.025 38);
+  }
+
+  .autumn-card-gradient {
+    background: linear-gradient(145deg, oklch(0.98 0.012 45) 0%, oklch(0.95 0.02 40) 100%);
+  }
+
+  .autumn-hover-transition {
+    transition: all 0.2s ease-in-out;
+  }
+
+  .autumn-hover-transition:hover {
+    color: oklch(0.35 0.04 32);
+  }
 }
