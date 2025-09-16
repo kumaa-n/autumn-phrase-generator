@@ -12,7 +12,7 @@ const notoSerifJP = Noto_Serif_JP({
 
 export const metadata: Metadata = {
   title: "秋フレーズジェネレーター",
-  description: "生成されたフレーズから、秋を感じてください",
+  description: "フレーズから、秋っぽさを感じてください",
   icons: {
     icon: "/autumn-leaves.svg",
   },
