@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "秋フレーズジェネレーター",
   description: "フレーズから、秋っぽさを感じてください",
   icons: {
-    icon: "/autumn-leaves.svg",
+    icon: "/autumn-leaves.ico",
   },
   openGraph: {
     title: "秋フレーズジェネレーター",
