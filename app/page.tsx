@@ -38,7 +38,7 @@ export default function Home() {
           {/* タイトル */}
           <div className="text-center mb-12">
             <h1 className="text-3xl md:text-6xl font-bold mb-4">秋フレーズジェネレーター</h1>
-            <p className="text-lg text-autumn-muted">フレーズから、秋っぽさを感じてください</p>
+            <p className="text-lg text-autumn-muted">フレーズから秋っぽさを感じてください</p>
           </div>
 
           {/* フレーズ表示エリア */}
