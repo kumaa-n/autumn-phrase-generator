@@ -1,12 +1,14 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 
 export default function Header() {
   return (
     <header className="navbar bg-neutral text-base-100">
       <div className="flex-1">
-        <Link href="/" className="text-base sm:text-lg">
+        <Link href="/" className="flex items-center gap-2 text-base sm:text-lg">
+          <Image src="/autumn-leaves.svg" alt="ロゴ" width={24} height={24} priority />
           秋フレーズジェネレーター
         </Link>
       </div>
