@@ -12,13 +12,13 @@ const notoSerifJP = Noto_Serif_JP({
 
 export const metadata: Metadata = {
   title: "秋フレーズジェネレーター",
-  description: "フレーズから、秋っぽさを感じてください",
+  description: "フレーズから秋っぽさを感じてください",
   icons: {
     icon: "/autumn-leaves.ico",
   },
   openGraph: {
     title: "秋フレーズジェネレーター",
-    description: "フレーズから、秋っぽさを感じてください",
+    description: "フレーズから秋っぽさを感じてください",
     images: [
       {
         url: "/ogp.png",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "秋フレーズジェネレーター",
-    description: "フレーズから、秋っぽさを感じてください",
+    description: "フレーズから秋っぽさを感じてください",
     images: ["/ogp.png"],
   },
 }
